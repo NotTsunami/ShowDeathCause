@@ -89,6 +89,23 @@ namespace ShowDeathCause
                     list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_CRIT", "<color=#FF0000>치명타!</color> <color=#00FF80>{0}</color>에게 죽었습니다 <color=#FF8000>{1}</color> ({2} 대미지를 받음)."));
                     list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_VOID", "<color=#621e7d>공허 감옥에 갖힘!</color> <color=#00FF80>{0}</color>에게 죽었습니다 <color=#FF8000>{1}</color>."));
                 }
+                else if (Language.currentLanguageName == "zh-CN")
+                {
+                    list.Add(new KeyValuePair<string, string>("SDC_KILLER_FALL_DAMAGE", "<color=#964B00>坠落伤害</color>"));
+                    list.Add(new KeyValuePair<string, string>("SDC_KILLER_VOID_FOG", "<color=#753f8a>虚空之雾</color>"));
+
+                    list.Add(new KeyValuePair<string, string>("SDC_GENERIC_PREFIX_DEATH", "<color=#FFFFFF>被</color> <color=#FFFF80>{0}</color> <color=#FFFFFF>杀死 ({1} 伤害)</color>"));
+                    list.Add(new KeyValuePair<string, string>("SDC_GENERIC_PREFIX_DEATH_FRIENDLY", "<color=#FFFFFF>被</color> <color=#FFFF80>{0}</color> <color=#FFFFFF>杀死 ({1} 伤害) <color=#32a852>(友伤)</color></color>"));
+                    list.Add(new KeyValuePair<string, string>("SDC_GENERIC_PREFIX_DEATH_VOID", "<color=#FFFFFF>被</color> <color=#FFFF80>{0}</color> <color=#FFFFFF>杀死 ({1} 伤害) <color=#FF8000>(空狱)</color></color>"));
+
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_VOID_FOG", "<color=#00FF80>{0}</color>死于 <color=#753f8a>虚空之雾</color> (承受了 {2} 伤害)."));
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_FALL_DAMAGE", "<color=#00FF80>{0}</color>死于 <color=#964B00>坠落伤害</color> (承受了 {2} 伤害)."));
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_FRIENDLY", "<color=#32a852>中出叛徒!</color> <color=#00FF80>{0}</color> 被 <color=#FF8000>{1}</color> 杀死 (承受了 {2} 伤害)."));
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_FRIENDLY_CRIT", "<color=#32a852>中出叛徒!</color> <color=#FF0000>暴击!</color> <color=#00FF80>{0}</color> 被 <color=#FF8000>{1}</color> 杀死 (承受了 {2} 伤害)."));
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH", "<color=#00FF80>{0}</color> 被 <color=#FF8000>{1}</color> 杀死 (承受了 {2} 伤害)."));
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_CRIT", "<color=#FF0000>暴击!</color> <color=#00FF80>{0}</color> 被 <color=#FF8000>{1}</color> 杀死 (承受了 {2} 伤害)."));
+                    list.Add(new KeyValuePair<string, string>("SDC_PLAYER_DEATH_VOID", "<color=#621e7d>坐牢!</color> <color=#00FF80>{0}</color> 被 <color=#FF8000>{1}</color> 杀死."));
+                }
                 else
                 {
                     // Fallback to English for unsupported languages
